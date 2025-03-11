@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIDER 3D</title>
+    <link  rel="icon" href="https://i.pinimg.com/736x/75/0a/18/750a1849dd74e37ef9ecfa9e9af25e3b.jpg" type="image/x-icon">
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="doremon_1.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="doremon_2.jpg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="doremon_3.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="doremon_4.jpg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="doremon_5.jpg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="doremon_6.jpg" alt=""></div>
+            <div class="item" style="--position: 7"><img src="doremon_7.jpg" alt=""></div>
+            <div class="item" style="--position: 8"><img src="doremon_8.jpg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="doremon_9.jpg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="doremon_10.jpg" alt=""></div>
+        </div>
+        <div class="content">
+            <h1 data-content="CSS ONLY">
+                CSS ONLY
+            </h1>
+            <div class="author">
+                <h2>S.HIV@M</h2>
+                <p><b>Web Design</b></p>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
